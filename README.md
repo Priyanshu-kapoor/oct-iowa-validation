@@ -152,6 +152,7 @@ All scripts are in `scripts/` and are run as `python -I week2/scripts/<script>`.
 | `edge_effect.py` | Error of B-scans by distance from the end of the 61-scan volume of eye 10301 | `tables/edge_effect_10301.csv` |
 | `build_report.py` | Builds the full Word report from the saved tables and figures | `report/IOWA_vs_GT_report.docx` |
 | `build_report_part1.py` | Builds Part 1 of the report (boundary error, layer overlap, thickness, worst images) | `report/IOWA_vs_GT_report_Part1.docx` |
+| `build_report_part2.py` | Builds Part 2 of the report (outline export, topographic maps, run time) | `report/IOWA_vs_GT_report_Part2.docx` |
 
 ## Results
 

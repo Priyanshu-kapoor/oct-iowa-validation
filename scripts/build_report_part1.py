@@ -4,7 +4,7 @@ layer overlap, layer thickness, the three worst diseased-looking images and the 
 Outline files, topographic maps and run time belong to Part 2 and are not in this document.
 
 Every number in the text is read from a table in week2\tables (this script writes no table and changes no other report file).
-The figures are the original PNG files in week2\figures, embedded unchanged. Set REPO_URL below once the repository exists.
+The figures are the original PNG files in week2\figures, embedded unchanged. REPO_URL (below) is the address of the code repository shown as a link in Appendix B.
 
     python -I week2\scripts\build_report_part1.py
 """
@@ -23,7 +23,7 @@ from docx.shared import Cm, Pt
 sys.path.insert(0, str(Path(__file__).parent))
 import w2common as W
 
-REPO_URL = "https://github.com/<username>/<repository>"      # replace with the real address of the code repository
+REPO_URL = "https://github.com/Priyanshu-kapoor/oct-iowa-validation"      # address of the code repository
 if "<" in REPO_URL:
     print("WARNING: REPO_URL is still a placeholder; Appendix B will show it as is. Edit REPO_URL at the top of this script.")
 
@@ -107,8 +107,9 @@ def H(level, text):
     doc.add_heading(text, level)
 
 
-def P(text, italic=False, bold=False, size=None):
+def P(text, italic=False, bold=False, size=None, keep=False):
     p = doc.add_paragraph()
+    p.paragraph_format.keep_with_next = keep
     r = p.add_run(text)
     r.italic, r.bold = italic, bold
     if size:
@@ -140,15 +141,41 @@ def TAB(header, rows, widths=None, size=9):
         cells = t.add_row().cells
         for i, v in enumerate(row):
             cells[i].text = str(v)
-    for row in t.rows:
+    for k, row in enumerate(t.rows):
         for i, c in enumerate(row.cells):
             for p in c.paragraphs:
                 p.paragraph_format.space_after = Pt(0)
+                if len(rows) <= 14 and k < len(t.rows) - 1:          # short tables stay on one page
+                    p.paragraph_format.keep_with_next = True
                 for r in p.runs:
                     r.font.size = Pt(size)
             if widths:
                 c.width = Cm(widths[i])
     doc.add_paragraph()
+
+
+def add_hyperlink(paragraph, url, text):
+    """Append a clickable external hyperlink (blue, underlined) to a paragraph."""
+    from docx.opc.constants import RELATIONSHIP_TYPE as RT
+    from docx.oxml import OxmlElement
+    from docx.oxml.ns import qn
+    rid = paragraph.part.relate_to(url, RT.HYPERLINK, is_external=True)
+    link = OxmlElement("w:hyperlink")
+    link.set(qn("r:id"), rid)
+    run = OxmlElement("w:r")
+    rpr = OxmlElement("w:rPr")
+    color = OxmlElement("w:color")
+    color.set(qn("w:val"), "0563C1")
+    underline = OxmlElement("w:u")
+    underline.set(qn("w:val"), "single")
+    rpr.append(color)
+    rpr.append(underline)
+    run.append(rpr)
+    t = OxmlElement("w:t")
+    t.text = text
+    run.append(t)
+    link.append(run)
+    paragraph._p.append(link)
 
 
 def FIG(path, caption, width=IMG_W):
@@ -258,7 +285,7 @@ P(f"The whole retina overlaps almost perfectly in both groups ({b('dice_layer', 
 H(2, "3.3 Layer thickness")
 P("Thickness is the distance between two boundaries. The table gives the average thickness in GT and in IOWA, the mean bias (IOWA minus GT) and the RMSE of the thickness.")
 for g, nn in (("normal", nN), ("diseased", nD)):
-    P(f"{g.capitalize()}-looking eyes (n = {nn})", bold=True)
+    P(f"{g.capitalize()}-looking eyes (n = {nn})", bold=True, keep=True)
     TAB(["Layer", "GT mean (um)", "IOWA mean (um)", "Bias, IOWA - GT (um)", "RMSE (um)"],
         [[l, f"{TS[(g, l)]['gt_mean_um']:.1f}", f"{TS[(g, l)]['iowa_mean_um']:.1f}", f"{TS[(g, l)]['bias_mean_um']:+.1f}",
           f"{TS[(g, l)]['rmse_mean_um']:.1f} +/- {TS[(g, l)]['rmse_sd_um']:.1f}"] for l in W.LAYER_NAMES + [W.TOTAL]],
@@ -376,8 +403,10 @@ TAB(["Eye", "Group", "B-scan", "RMSE all (um)", "Worst boundary (um)", "Dice who
 
 # ================================================================== 9 Appendix B
 H(1, "9. Appendix B: code")
-P(f"The code is in the repository {REPO_URL}. The folders named in this report (scripts/, tables/, figures/, outlines/, maps/) are folders of that repository. "
-  "The table lists the scripts in scripts/.")
+_p = P("The code is in the repository ")
+add_hyperlink(_p, REPO_URL, REPO_URL)
+_p.add_run(". The folders named in this report (scripts/, tables/, figures/, outlines/, maps/) are folders of that repository. "
+           "The table lists the scripts in scripts/.")
 IO = {   # script(s) -> (input, output)
     "gate_check.py": ("existing IOWA result and GT of eye 10301, B-scans 120-180", "tables/gate_10301.csv"),
     "screen_abnormal.py": ("GT layers of all usable eyes", "tables/abnormal_screening.csv"),
