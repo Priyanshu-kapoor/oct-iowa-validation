@@ -6,3 +6,4 @@
 *.zip
 __pycache__/
 .claude/
+report/IOWA_vs_GT_report.docx
