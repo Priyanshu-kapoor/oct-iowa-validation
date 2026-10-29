@@ -1,0 +1,7 @@
+group,item,n_units,mean,sd,ci95,min,max
+other,ILM->IPL-INL,1,0.9769,nan,nan,0.9769,0.9769
+other,IPL-INL->OPL-HFL,1,0.9231,nan,nan,0.9231,0.9231
+other,OPL-HFL->BMEIS,1,0.9587,nan,nan,0.9587,0.9587
+other,BMEIS->IB_RPE,1,0.9231,nan,nan,0.9231,0.9231
+other,IB_RPE->OB_RPE,1,0.8628,nan,nan,0.8628,0.8628
+other,whole_retina,1,0.9953,nan,nan,0.9953,0.9953

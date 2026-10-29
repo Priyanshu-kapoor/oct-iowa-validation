@@ -1,0 +1,8 @@
+﻿manual_batch_pages/
+*.mhd
+*.raw
+*.mat
+*.bmp
+*.zip
+__pycache__/
+.claude/

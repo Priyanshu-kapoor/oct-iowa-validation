@@ -1,0 +1,8 @@
+group,item,n_units,mean,sd,ci95,min,max
+other,ILM,1,2.5014,nan,nan,2.5014,2.5014
+other,IPL-INL,1,3.3655,nan,nan,3.3655,3.3655
+other,OPL-HFL,1,6.0816,nan,nan,6.0816,6.0816
+other,BMEIS,1,3.5966,nan,nan,3.5966,3.5966
+other,IB_RPE,1,4.0610,nan,nan,4.0610,4.0610
+other,OB_RPE,1,2.1579,nan,nan,2.1579,2.1579
+other,ALL,1,3.8439,nan,nan,3.8439,3.8439

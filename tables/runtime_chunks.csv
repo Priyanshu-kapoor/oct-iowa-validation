@@ -1,0 +1,4 @@
+eye,volume,n_bscans,role,final_stage_s,cycle_s,time_file_final_s
+10301,140-160,21,pilot,9.7045,204.0000,2.1110
+10335,153-232,80,chunk of a full volume,98.1684,181.0000,2.6160
+10335,1-80,80,chunk of a full volume,30.0935,108.0000,2.7470

@@ -1,0 +1,14 @@
+item,kind,value
+ILM,boundary RMSE (um),2.5014
+IPL-INL,boundary RMSE (um),3.3655
+OPL-HFL,boundary RMSE (um),6.0816
+BMEIS,boundary RMSE (um),3.5966
+IB_RPE,boundary RMSE (um),4.0610
+OB_RPE,boundary RMSE (um),2.1579
+ALL,boundary RMSE (um),3.8439
+ILM->IPL-INL,layer Dice,0.9769
+IPL-INL->OPL-HFL,layer Dice,0.9231
+OPL-HFL->BMEIS,layer Dice,0.9587
+BMEIS->IB_RPE,layer Dice,0.9231
+IB_RPE->OB_RPE,layer Dice,0.8628
+whole retina,layer Dice,0.9953

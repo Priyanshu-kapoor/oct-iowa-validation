@@ -1,0 +1,5 @@
+key,value,source
+gate_rmse,3.8439,gate_10301.csv
+pilot_61,4.199,pilot_21_vs_61.csv
+pilot_21,4.191,pilot_21_vs_61.csv
+median_ok_normal,4.8542,scores_per_eye.csv

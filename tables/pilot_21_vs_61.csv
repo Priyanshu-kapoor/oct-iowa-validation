@@ -1,0 +1,8 @@
+boundary,rmse_61scan_um,rmse_21scan_um,rmse_change_um,mean_abs_diff_between_runs_um
+ILM,2.634,2.522,-0.112,0.123
+IPL-INL,2.951,2.940,-0.011,0.041
+OPL-HFL,7.338,7.355,0.017,0.206
+BMEIS,3.789,3.789,0.000,0.000
+IB_RPE,4.203,4.203,0.000,0.000
+OB_RPE,2.067,2.067,0.000,0.000
+ALL,4.199,4.191,-0.008,0.062

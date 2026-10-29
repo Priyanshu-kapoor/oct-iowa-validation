@@ -1,0 +1,31 @@
+default_run_no,batch_default,eye,group,bscan,a,b,volume,rule,central_offset,cyst_run,cyst_run_no,batch_cyst
+2,1,10306,diseased,124,114,134,10306_114-134,largest GT cyst-band thickness,-28,1,32,4
+3,1,10304,normal,156,146,166,10304_146-166,foveal pit (min smoothed GT total thickness),4,0,,
+4,1,10307,normal,157,147,167,10307_147-167,foveal pit (min smoothed GT total thickness),5,0,,
+5,1,10335,diseased,138,128,148,10335_128-148,largest GT cyst-band thickness,-14,1,33,4
+6,1,10314,normal,144,134,154,10314_134-154,foveal pit (min smoothed GT total thickness),-8,0,,
+7,1,10315,normal,152,142,162,10315_142-162,foveal pit (min smoothed GT total thickness),0,0,,
+8,1,10302,diseased,160,150,170,10302_150-170,largest GT cyst-band thickness,8,0,,
+9,1,10320,normal,154,144,164,10320_144-164,foveal pit (min smoothed GT total thickness),2,0,,
+10,1,10323,normal,163,153,173,10323_153-173,foveal pit (min smoothed GT total thickness),11,0,,
+11,2,10310,diseased,149,139,159,10310_139-159,largest GT total retina thickness (raised dome),-3,0,,
+12,2,10330,normal,157,147,167,10330_147-167,foveal pit (min smoothed GT total thickness),5,0,,
+13,2,10334,normal,153,143,163,10334_143-163,foveal pit (min smoothed GT total thickness),1,0,,
+14,2,10317,diseased,212,202,222,10317_202-222,largest GT cyst-band thickness,60,0,,
+15,2,10340,normal,155,145,165,10340_145-165,foveal pit (min smoothed GT total thickness),3,0,,
+16,2,10343,normal,162,152,172,10343_152-172,foveal pit (min smoothed GT total thickness),10,0,,
+17,2,10325,diseased,133,123,143,10325_123-143,largest GT cyst-band thickness,-19,1,34,4
+18,2,10356,normal,152,142,162,10356_142-162,foveal pit (min smoothed GT total thickness),0,0,,
+19,2,10357,normal,158,148,168,10357_148-168,foveal pit (min smoothed GT total thickness),6,0,,
+20,2,10367,diseased,147,137,157,10367_137-157,largest GT total retina thickness (raised dome),-5,0,,
+21,3,10363,normal,154,144,164,10363_144-164,foveal pit (min smoothed GT total thickness),2,0,,
+22,3,10366,normal,160,150,170,10366_150-170,foveal pit (min smoothed GT total thickness),8,0,,
+23,3,10373,diseased,194,184,204,10373_184-204,largest GT cyst-band thickness,42,0,,
+24,3,10372,normal,143,133,153,10372_133-153,foveal pit (min smoothed GT total thickness),-9,0,,
+25,3,10377,normal,152,142,162,10377_142-162,foveal pit (min smoothed GT total thickness),0,0,,
+26,3,10380,diseased,119,109,129,10380_109-129,largest GT cyst-band thickness,-33,1,35,4
+27,3,10383,normal,155,145,165,10383_145-165,foveal pit (min smoothed GT total thickness),3,0,,
+28,3,10395,normal,154,144,164,10395_144-164,foveal pit (min smoothed GT total thickness),2,0,,
+29,3,10396,normal,153,143,163,10396_143-163,foveal pit (min smoothed GT total thickness),1,0,,
+30,3,10398,normal,148,138,158,10398_138-158,foveal pit (min smoothed GT total thickness),-4,0,,
+31,4,10399,normal,156,146,166,10399_146-166,foveal pit (min smoothed GT total thickness),4,0,,

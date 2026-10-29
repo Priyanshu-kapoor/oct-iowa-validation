@@ -1,0 +1,3 @@
+eye,a,b,variant,iowa_bscan_ranges,iowa_bscans,map_bscans,iowa_share_of_304_pct,iowa_y_from_mm,iowa_y_to_mm,iowa_unusable_pct_of_segmented,gt_invalid_pct,undefined_regions_in_xml
+10301,120,180,original,120-180,61,61,20.0658,1.1743,1.7763,0.0000,0.0000,0
+10335,1,304,original,1-80;128-148;153-232,181,304,59.5395,0.0000,2.2895,0.0000,0.0000,0

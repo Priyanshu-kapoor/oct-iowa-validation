@@ -1,0 +1,3 @@
+Eye 10306 (B-scan 124): overall RMSE 99.61 um. Largest error on OPL-HFL (RMSE 173.71 um); its worst column is 59 (0.57 mm from the left edge) with 268.8 um; 99% of its columns are off by more than 10 um; boundaries cross in 0 column(s).
+Eye 10380 (B-scan 119): overall RMSE 56.54 um. Largest error on IPL-INL (RMSE 98.55 um); its worst column is 214 (2.10 mm from the left edge) with 193.8 um; 81% of its columns are off by more than 10 um; boundaries cross in 0 column(s).
+Eye 10325 (B-scan 133): overall RMSE 30.79 um. Largest error on BMEIS (RMSE 62.50 um); its worst column is 46 (0.44 mm from the left edge) with 118.8 um; 65% of its columns are off by more than 10 um; boundaries cross in 0 column(s).
