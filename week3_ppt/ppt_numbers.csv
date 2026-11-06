@@ -1,0 +1,37 @@
+quantity,value
+eyes_done,78
+eyes_in_list,78
+bscans_scored,23712
+ascans_scored,7208448
+seconds_per_eye_mean,305.1282
+seconds_per_eye_median,300.5000
+seconds_per_eye_min,265.0000
+seconds_per_eye_max,395.0000
+total_run_hours_sum_of_eyes,6.6111
+first_start,2026-11-05T01:27:17
+last_end,2026-11-05T09:08:54
+peak_ram_gb_max,10.5600
+peak_ram_gb_mean,9.6782
+attempts_not_done,2
+whole_retina_rmse_eye_mean,3.1085
+whole_retina_rmse_eye_sd,1.2350
+whole_retina_rmse_eye_median,2.8925
+whole_retina_rmse_pooled,3.3419
+best_eyes,10375=2.45;10368=2.55;10316=2.55
+worst_eyes,10371=13.49;10334=4.07;10347=3.74
+worst_eye_worst_bscan,10371 B-scan 1 = 25.11
+worst_eye_fovea_bscan,10371 B-scan 155 = 12.88
+best_eye_fovea_bscan,10375 B-scan 151 = 3.52
+heatmap_colour_cap_um,9.6569
+eyes_bmeis_boundary_rmse_over_20um,32
+eyes_bmeis_iowa_above_gt_by_over_10px_on_average,23
+eyes_bmeis_iowa_below_gt_by_over_10px_on_average,0
+bmeis_boundary_rmse_eye_median,6.2394
+ob_rpe_boundary_rmse_worst_eye,14.5882
+layer_thickness_rmse_eye_median | ILM->IPL-INL,6.9299
+layer_thickness_rmse_eye_median | IPL-INL->OPL-HFL,8.2953
+layer_thickness_rmse_eye_median | OPL-HFL->BMEIS,10.7792
+layer_thickness_rmse_eye_median | BMEIS->IB_RPE,6.9801
+layer_thickness_rmse_eye_median | IB_RPE->OB_RPE,6.3978
+map_masked_columns_iowa_gt,0;0
+fovea_bscan_range,136-169
