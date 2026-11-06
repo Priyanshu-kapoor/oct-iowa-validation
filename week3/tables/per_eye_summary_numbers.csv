@@ -1,0 +1,13 @@
+quantity,value
+n_eyes,78
+whole_retina_rmse_median,2.8925
+whole_retina_rmse_q1,2.7512
+whole_retina_rmse_q3,3.1211
+whole_retina_rmse_min,2.4492
+whole_retina_rmse_max,13.4922
+n_eyes_whole_retina_over_10um,1
+n_eyes_bmeis_adjacent_over_20um,32
+bmeis_failure_group_median_um,61.1606
+whole_retina_median_used_for_typical,2.8925
+colour_cap_rmse_um,97.6846
+colour_cap_bias_um,92.9587
